@@ -15,12 +15,13 @@ export default defineNuxtConfig({
     },
     "@pinia/nuxt",
     "@pinia-plugin-persistedstate/nuxt",
+    "@formkit/auto-animate/nuxt",
   ],
   piniaPersistedstate: {
     cookieOptions: {
-      sameSite: 'strict',
+      sameSite: "strict",
     },
-    storage: 'sessionStorage'
+    storage: "sessionStorage",
   },
   vite: {
     vue: {

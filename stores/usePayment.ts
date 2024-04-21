@@ -9,7 +9,7 @@ export default defineStore("payment", {
     payments: paymentJson as Payment[],
   }),
   getters: {
-    getProduct: (state) => state.payments,
+    getPayments: (state) => state.payments,
   },
   actions: {
     addCustomer(payment: Payment): void {

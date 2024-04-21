@@ -4,7 +4,7 @@
       <div
         class="d-inline-flex align-center text-h4 font-weight-bold my-5 text-primary"
       >
-        Landing Page
+        Sales Dashboard
       </div>
     </template>
     <v-app-bar-nav-icon
@@ -19,28 +19,26 @@
           v-for="item in menu"
           :key="item"
           class="text-body-1 blue-grey-darken-4"
-          :href="`/${item.toLowerCase()}`"
+          :to="`${item.to}`"
           variant="text"
+          tag="NuxtLink"
         >
-          {{ item }}
+          {{ item.text }}
         </v-btn>
       </div>
     </template>
   </v-app-bar>
   <v-navigation-drawer v-model="drawer" temporary>
-    <v-list :items="menu"></v-list>
+    <v-list v-for="item in menu" :key="item" :to="item.to">{{
+      item.text
+    }}</v-list>
   </v-navigation-drawer>
 </template>
 
 <script setup>
 const menu = [
-  "Home",
-  "About",
-  "Testimonials",
-  "Work",
-  "Team",
-  "Features",
-  "Pricing",
+  { text: "Dashboard", to: "/" },
+  { text: "Order", to: "/order" },
 ];
 const drawer = ref(false);
 const group = ref(null);

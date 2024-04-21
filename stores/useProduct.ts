@@ -9,7 +9,7 @@ export default defineStore("product", {
     products: productJson as Product[],
   }),
   getters: {
-    getProduct: (state) => state.products,
+    getProducts: (state) => state.products,
   },
   actions: {
     addCustomer(product: Product): void {

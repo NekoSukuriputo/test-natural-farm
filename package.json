@@ -13,11 +13,14 @@
     "@formkit/auto-animate": "^0.8.2",
     "@mdi/font": "^7.4.47",
     "@pinia/nuxt": "^0.5.1",
+    "apexcharts": "^3.49.0",
     "nuxt": "^3.11.2",
     "pinia": "^2.1.7",
     "pinia-plugin-persistedstate": "^3.2.1",
+    "uuid": "^9.0.1",
     "vue": "^3.4.21",
-    "vue-router": "^4.3.0"
+    "vue-router": "^4.3.0",
+    "vue3-apexcharts": "^1.5.2"
   },
   "devDependencies": {
     "@pinia-plugin-persistedstate/nuxt": "^1.2.0",
